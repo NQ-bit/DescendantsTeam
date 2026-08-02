@@ -13,6 +13,22 @@ public class QuestBookButtonBehaviour : MonoBehaviour
     [SerializeField ] private string[] noQuestsText;
     private bool openBook;
 
+    public void OpenDiaryFirstTime()
+    {
+        openBook = true; // force open
+        CreatePage();
+
+        // Show a special first-time message
+        if (questTextBox != null)
+        {
+            questTextBox.text = "You found a diary. It might contain clues...";
+        }
+
+        // Mark diary as opened so it never auto-opens again
+        PlayerPrefs.SetInt("DiaryOpened", 1);
+    }
+
+
     public void OpenQuestBook() 
     {
         openBook = !openBook;

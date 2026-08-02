@@ -8,6 +8,8 @@ public class SceneNameDisplay : MonoBehaviour
     [SerializeField] private TextMeshProUGUI locationText;
     [SerializeField] private float displayTime = 3f;
 
+    [SerializeField] private DialogueManager dialogueManager;
+
     private void OnEnable()
     {
         // Script displays the words on the scene that says "living room"
@@ -20,6 +22,8 @@ public class SceneNameDisplay : MonoBehaviour
     {
         yield return new WaitForSeconds(displayTime);
         gameObject.SetActive(false);
+        gameObject.SetActive(false);
+        dialogueManager.StartDialogue();
     }
 
 }
