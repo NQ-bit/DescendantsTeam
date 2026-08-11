@@ -47,9 +47,9 @@ public class DialogueManager : MonoBehaviour
             arrowIndicator.ShowArrow();
         }
 
-        if (!PlayerPrefs.HasKey("DiaryOpened"))
-        {
-            questBook.OpenDiaryFirstTime();
-        }
+       // if (!PlayerPrefs.HasKey("DiaryOpened"))
+        //{
+        //   questBook.OpenDiaryFirstTime();
+       // }
     }
 }

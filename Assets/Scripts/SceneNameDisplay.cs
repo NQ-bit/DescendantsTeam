@@ -23,7 +23,7 @@ public class SceneNameDisplay : MonoBehaviour
         yield return new WaitForSeconds(displayTime);
         gameObject.SetActive(false);
         gameObject.SetActive(false);
-        dialogueManager.StartDialogue();
+       // dialogueManager.StartDialogue();
     }
 
 }
