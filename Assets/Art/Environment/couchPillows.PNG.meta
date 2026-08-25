@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 4321ec67ee2555049a05500098a0c3a4
+guid: a712b3109132dab44bb1afbee57d0241
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1636318925241012259
-    second: image3_0
+      213: 2235604351776592877
+    second: couchPillows_0
+  - first:
+      213: -5114701095036696534
+    second: couchPillows_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: image3_0
+      name: couchPillows_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 160
+        y: 517
+        width: 331
+        height: 277
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +144,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3205d36946f55b610800000000000000
-      internalID: 1636318925241012259
+      spriteID: de316fd2056760f10800000000000000
+      internalID: 2235604351776592877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: couchPillows_1
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 665
+        width: 221
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a284902f37ee409b0800000000000000
+      internalID: -5114701095036696534
       vertices: []
       indices: 
       edges: []
@@ -161,7 +186,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      image3_0: 1636318925241012259
+      couchPillows_0: 2235604351776592877
+      couchPillows_1: -5114701095036696534
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
