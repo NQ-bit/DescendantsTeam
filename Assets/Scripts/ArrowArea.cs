@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class ArrowArea : MonoBehaviour
 {
     public ArrowIndicator arrowIndicator;
-    public GameObject diaryIcon;
+    public DiaryController diaryPanel;
 
     void Start()
     {
@@ -14,6 +14,10 @@ public class ArrowArea : MonoBehaviour
     void OnHotspotClicked()
     {
         arrowIndicator.HideArrow();   // hide the arrow
-        diaryIcon.SetActive(true);    // show the diary icon
+        Debug.Log("Open Diary");
+        diaryPanel.OpenDiaryFromPopup();    // show the diary icon
+        Debug.Log("Diary is Open");
+        
+       
     }
 }
