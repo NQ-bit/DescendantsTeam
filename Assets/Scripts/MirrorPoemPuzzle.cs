@@ -24,6 +24,9 @@ public class MirrorPoemPuzzle : MonoBehaviour
     public AudioClip correctSound;
     public AudioClip wrongSound;
 
+    // Task Manager reference
+    public TaskManager taskManager;
+
 
     // Correct answers in order
     private string[] correctWords = {
@@ -109,6 +112,12 @@ public class MirrorPoemPuzzle : MonoBehaviour
 
             // Show dialogue panel
             dialogueAfterPuzzlePanel.SetActive(true);
+
+            // Daily Affirmation task as complete
+            if (taskManager != null)
+            {
+                taskManager.CompleteTask("DailyAffirmation");
+            }
         }
         else
         {

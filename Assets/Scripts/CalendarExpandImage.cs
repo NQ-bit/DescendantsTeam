@@ -5,6 +5,7 @@ public class CalendarExpandImage : MonoBehaviour
 {
     public Sprite imageToShow;
     public CalendarFullImage viewer;
+    public TaskManager taskManager;
 
     void Start()
     {
@@ -14,5 +15,8 @@ public class CalendarExpandImage : MonoBehaviour
     void OnClick()
     {
         viewer.Show(imageToShow);
+
+        // Mark the calendar task as completed
+        taskManager.CompleteTask("CheckCalendar");
     }
 }
