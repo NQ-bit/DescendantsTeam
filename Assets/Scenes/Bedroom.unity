@@ -1198,6 +1198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ArrowIndicator
   arrowUI: {fileID: 88752538}
+<<<<<<< Updated upstream
 --- !u!1 &297446893
 GameObject:
   m_ObjectHideFlags: 0
@@ -2311,6 +2312,8 @@ RectTransform:
   m_AnchoredPosition: {x: 707.6433, y: 95.002}
   m_SizeDelta: {x: 176.4516, y: 89.995}
   m_Pivot: {x: 0.5, y: 0.5}
+=======
+>>>>>>> Stashed changes
 --- !u!1 &478269703
 GameObject:
   m_ObjectHideFlags: 0
@@ -6884,9 +6887,13 @@ GameObject:
   - component: {fileID: 1643118770}
   - component: {fileID: 1643118769}
   - component: {fileID: 1643118768}
+<<<<<<< Updated upstream
   - component: {fileID: 1643118772}
   - component: {fileID: 1643118771}
   - component: {fileID: 1643118773}
+=======
+  - component: {fileID: 1643118771}
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6968,6 +6975,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 --- !u!82 &1643118771
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7066,6 +7074,9 @@ AudioSource:
     m_PostInfinity: 2
     m_RotationOrder: 4
 --- !u!114 &1643118772
+=======
+--- !u!114 &1643118771
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7109,6 +7120,7 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+<<<<<<< Updated upstream
 --- !u!114 &1643118773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7553,6 +7565,8 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1913264258
 GameObject:
   m_ObjectHideFlags: 0
