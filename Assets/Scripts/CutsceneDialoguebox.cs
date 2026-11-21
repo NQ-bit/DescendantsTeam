@@ -79,7 +79,7 @@ public class CutsceneDialoguebox : MonoBehaviour
         else
         {
             // All dialogues finished -> load next scene
-            //SceneManager.LoadScene(nextSceneName);
+            SceneManager.LoadScene(nextSceneName);
 
             StartCoroutine(ShowMonsterSequence());
         }
