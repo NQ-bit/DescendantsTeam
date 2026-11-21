@@ -29,7 +29,13 @@ public class cabinetPartyItemChoice : MonoBehaviour
 
     IEnumerator CDDialogue()
     {
-        mainDialogueManager.enabled = false;   // STOP overwriting
+        // mainDialogueManager.enabled = false;   // STOP overwriting
+
+        //mainDialogueManager.gameObject.SetActive(false);
+
+        mainDialogueManager.dialogueIsActive = false;
+        mainDialogueManager.StopDialogue();
+
 
         gameObject.SetActive(false);
         dialoguePanel.SetActive(true);
@@ -37,6 +43,7 @@ public class cabinetPartyItemChoice : MonoBehaviour
         dialogueText.text = "I guess I’ll choose this one.";
         yield return new WaitForSeconds(2f);
 
+        Debug.Log("waitedTwoSeconds");
         dialogueText.text = "Who even listens to that kind of music? Pop music is popular.";
         yield return new WaitForSeconds(3f);
 
@@ -45,11 +52,17 @@ public class cabinetPartyItemChoice : MonoBehaviour
 
         EndDialogue();
 
-        mainDialogueManager.enabled = true;    // TURN IT BACK ON
+       // mainDialogueManager.enabled = true;    // TURN IT BACK ON
     }
 
     IEnumerator MangaDialogue()
     {
+        //mainDialogueManager.gameObject.SetActive(false);
+
+        mainDialogueManager.dialogueIsActive = false;
+        mainDialogueManager.StopDialogue();
+
+
         gameObject.SetActive(false);
         dialoguePanel.SetActive(true);
 
@@ -67,6 +80,12 @@ public class cabinetPartyItemChoice : MonoBehaviour
 
     IEnumerator PlushieDialogue()
     {
+        //mainDialogueManager.gameObject.SetActive(false);
+
+        mainDialogueManager.dialogueIsActive = false;
+        mainDialogueManager.StopDialogue();
+
+
         gameObject.SetActive(false);
         dialoguePanel.SetActive(true);
 
