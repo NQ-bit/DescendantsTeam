@@ -265,7 +265,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0.7830189, g: 0.65307325, b: 0.09972411, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -282,13 +282,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 57.5
+  m_fontSizeBase: 57.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -402,7 +402,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_fontColor: {r: 0.7735849, g: 0.6348394, b: 0.07662869, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -419,13 +419,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 40.3
+  m_fontSizeBase: 40.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -792,8 +792,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CutsceneDialoguebox
   dialogueText: {fileID: 193957747}
   dialogues:
-  - What do you do when there's nothing but darkness...
-  - When there's only monsters that remain in your memories...
+  - What do you do when the darkness is all consuming?
+  - When there's only monsters that remains in your memories?
+  - What once existed now only appears for a moment.
+  - 'Further in the distance is where you''ll find them. '
+  - And the further they move, the darkness fades.
+  - Leaving room for the light.
+  - Now, what left aside from reaching out to touch its warm embrace?
   nextSceneName: Bedroom
   typingSpeed: 0.05
 --- !u!1 &1788425774
@@ -936,7 +941,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1419780808266407091, guid: 1af89f0df63548b4c8afbb56dc746f0e, type: 3}
+  m_Sprite: {fileID: 1302723820812287101, guid: 8d64d5193c06cd549b8fa9cec5787c16, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

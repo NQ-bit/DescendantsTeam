@@ -6,6 +6,15 @@ public class DiaryController : MonoBehaviour
     public GameObject diaryCornerIcon;     // small icon in corner
     public GameObject Canvas;          // full diary
 
+    public InkNarrativeManager narrativeManager;
+    public TextAsset diaryNarrative;
+
+    void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
+
     void Start()
     {
         diaryPopupPanel.SetActive(false);
@@ -41,6 +50,36 @@ public class DiaryController : MonoBehaviour
 
     public void CloseDiary()
     {
+        /* Debug.Log("Diary closed");
+
+         Canvas.SetActive(false);
+
+         if (narrativeManager != null)
+         {
+             Debug.Log("Starting narrative");
+             narrativeManager.PlayNarrative(diaryNarrative);
+         }
+         else
+         {
+             Debug.Log("NARRATIVE MANAGER IS NULL");
+         } */
+
+        Debug.Log("Diary closed");
+
         Canvas.SetActive(false);
+
+        if (narrativeManager != null)
+        {
+            Debug.Log("Starting narrative");
+
+            // Turn on the calendar pulse AFTER this narrative finishes
+            narrativeManager.enableCalendarPulseOnClose = true;
+
+            narrativeManager.PlayNarrative(diaryNarrative);
+        }
+        else
+        {
+            Debug.Log("NARRATIVE MANAGER IS NULL");
+        }
     }
 }

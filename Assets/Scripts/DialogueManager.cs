@@ -16,6 +16,13 @@ public class DialogueManager : MonoBehaviour
     public AudioClip afterLine1Sound;   // sound to play after element 1
     private AudioSource audioSource;
 
+    public bool dialogueIsActive = true;
+
+
+    public void StopDialogue()
+    {
+        StopAllCoroutines();
+    }
 
     void Start()
     {
@@ -28,6 +35,11 @@ public class DialogueManager : MonoBehaviour
 
     void Update()
     {
+        if (!dialogueIsActive) return;
+
+        if (currentIndex >= dialogues.Length)
+            return;
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (dialogueText.text == dialogues[currentIndex])
@@ -41,6 +53,24 @@ public class DialogueManager : MonoBehaviour
             }
         }
     }
+
+
+
+    /* void Update()
+     {
+         if (Input.GetKeyDown(KeyCode.Space))
+         {
+             if (dialogueText.text == dialogues[currentIndex])
+             {
+                 NextDialogue();
+             }
+             else
+             {
+                 StopAllCoroutines();
+                 dialogueText.text = dialogues[currentIndex];
+             }
+         }
+     } */
 
     IEnumerator TypeDialogue()
     {
@@ -69,8 +99,11 @@ public class DialogueManager : MonoBehaviour
     {
         currentIndex++;
 
+        Debug.Log(currentIndex); 
+        Debug.Log(dialogues.Length);
         if (currentIndex < dialogues.Length)
         {
+            
             StartCoroutine(TypeDialogue());
         }
         else

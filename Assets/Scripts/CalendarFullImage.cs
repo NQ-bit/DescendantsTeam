@@ -4,6 +4,8 @@ using UnityEngine.UI;
 public class CalendarFullImage : MonoBehaviour
 {
     public Image fullImage;
+    public GameObject mirrorStillImage;
+
 
     public void Show(Sprite sprite)
     {
@@ -14,5 +16,10 @@ public class CalendarFullImage : MonoBehaviour
     public void Hide()
     {
         gameObject.SetActive(false);
+
+        if (mirrorStillImage != null)
+        {
+            mirrorStillImage.SetActive(true);
+        }
     }
 }

@@ -7,6 +7,12 @@ public class TaskManager : MonoBehaviour
     public TaskItem findCarKeysTask;
     public TaskItem checkShelfTask;
 
+    void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
+
     public void CompleteTask(string taskName)
     {
         switch (taskName)
@@ -28,4 +34,11 @@ public class TaskManager : MonoBehaviour
                 break;
         }
     }
+
+    public void PlayTaskCompleteSound()
+    {
+        GetComponent<AudioSource>().Play();
+    }
+
+
 }
