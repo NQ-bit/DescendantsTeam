@@ -12,6 +12,12 @@ public class CutsceneDialoguebox : MonoBehaviour
     private int currentIndex = 0;
     public float typingSpeed = 0.05f; // Speed for typewriter effect
 
+    public GameObject monsterPanel;
+
+    public GameObject monsterImage1;
+    public GameObject monsterImage2;
+    public GameObject monsterImage3;
+
     void Start()
     {
         StartCoroutine(TypeDialogue());
@@ -38,11 +44,29 @@ public class CutsceneDialoguebox : MonoBehaviour
     IEnumerator TypeDialogue()
     {
         dialogueText.text = "";
-        foreach (char letter in dialogues[currentIndex].ToCharArray())
-        {
-            dialogueText.text += letter;
-            yield return new WaitForSeconds(typingSpeed);
-        }
+         foreach (char letter in dialogues[currentIndex].ToCharArray())
+         {
+             dialogueText.text += letter;
+             yield return new WaitForSeconds(typingSpeed);
+         } 
+    }
+
+    IEnumerator ShowMonsterSequence()
+    {
+        monsterPanel.SetActive(true);
+
+        monsterImage1.SetActive(true);
+        yield return new WaitForSeconds(1.5f);
+
+        monsterImage1.SetActive(false);
+        monsterImage2.SetActive(true);
+        yield return new WaitForSeconds(1.5f);
+
+        monsterImage2.SetActive(false);
+        monsterImage3.SetActive(true);
+        yield return new WaitForSeconds(2.5f);
+
+        SceneManager.LoadScene(nextSceneName);
     }
 
     void NextDialogue()
@@ -55,7 +79,9 @@ public class CutsceneDialoguebox : MonoBehaviour
         else
         {
             // All dialogues finished -> load next scene
-            SceneManager.LoadScene(nextSceneName);
+            //SceneManager.LoadScene(nextSceneName);
+
+            StartCoroutine(ShowMonsterSequence());
         }
     }
 }
