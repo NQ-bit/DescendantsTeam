@@ -6066,7 +6066,7 @@ MonoBehaviour:
   narrativeText: {fileID: 487617826}
   calendarPulse: {fileID: 247828684}
   enableCalendarPulseOnClose: 0
-  mirrorIndicator: {fileID: 0}
+  mirrorIndicator: {fileID: 297446893}
   showMirrorIndicatorOnClose: 0
 --- !u!114 &1240417336
 MonoBehaviour:
