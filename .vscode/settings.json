@@ -67,6 +67,6 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "DescendantsTeamArtTest.slnx",
+    "dotnet.defaultSolution": "DescendantsTeam.slnx",
     "dotnet.enableWorkspaceBasedDevelopment": false
 }
